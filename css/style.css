@@ -364,4 +364,7 @@ width: 100%;
     .contentHeaderMobile{
         display: inline;
     }
+    .box1{
+        width: 90vw;
+    }
 }
