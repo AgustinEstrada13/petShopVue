@@ -329,7 +329,7 @@ width: 100%;
 }
 
 .checkContainer{
-    height: 60vh;
+    min-height: 60vh;
     min-width: 40vw;                                                    
     background-color: #9b3c46;
     font-size: 1.5rem;
