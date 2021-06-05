@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <title>Inicio</title>
+</head>
+<body>
+    <div id="app">
+        <div class="wrapper">
+            <header>
+                <!-- -----------PC------------- -->
+                <div class ="contentHeader">
+                    <img src="./img/Pet_Shop_logo2.png" alt="logo" id="logo">
+                    
+                    <h1 id="title">¡NUESTRA TIENDA!</h1>
+                    <nav>
+                        <a href="index.html" class = "active" >Inicio</a>
+                        <a href="farmacia.html">Farmacia</a>
+                        <a href="jugueteria.html">Juguetes</a>
+                        <a href="contacto.html">Contacto</a>
+                        <div class="dropdown mt-3">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                🛒({{carrito.length}})
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li v-for="articulo in carrito">
+                                    <a class="dropdown-item">{{articulo.nombre}} {{"- cantidad: "}} {{articulo.cantidad}} {{" - Precio: "}} {{articulo.precio}}</a>
+                                    
+                                </li>
+                                <li><a href="checkout.html">Continuar con la compra -></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+
+
+                <!-- ----------------MOBILE------------ -->
+                <div class="contentHeaderMobile">
+                    <h1>Pet Shop Franco - ¡NUESTRA TIENDA! </h1>
+                    <input type="checkbox" id="navbar-toggle">
+                    <label for="navbar-toggle">
+                        <span id="navbar-close">&times;</span>
+                        <span id="navbar-open">&equiv;</span>
+                    </label>
+                    <!-- <img src="./img/Pet_Shop_logo2.png" alt="logo" id="logo"> -->
+                    <nav class="navMobile">
+                        <a href="index.html" class = "active" >Inicio</a>
+                        <a href="farmacia.html">Farmacia</a>
+                        <a href="jugueteria.html">Juguetes</a>
+                        <a href="contacto.html">Contacto</a>
+                        <div class="dropdown mt-3">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                🛒({{carrito.length}})
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li v-for="articulo in carrito">
+                                    <a class="dropdown-item" id="carrito">{{articulo.nombre}} {{"- cantidad: "}} {{articulo.cantidad}} {{" - Precio: "}} {{articulo.precio}}</a>
+                                    
+                                </li>
+                                <li><a id ="carritoIcon" href="checkout.html">Continuar con la compra -></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <main>
+                <div class="containerMain">
+
+                    <a href="www.google.com" id="wsp"><img src="./img/icons8-whatsapp-64.png" alt="iconWsp"  ></a>
+
+                    <div class ="box1">
+                            <h3>Nuestra mascota visión</h3>
+
+                            <img src="./img/dog_bone.png" alt="">
+                
+                            <P>Si tenés mascotas, sabrás que tener veterinarias de confianza es vital para tu tranquilidad y la de tu compañero/a. Es que, disponer de alguien a quien recurrir en momentos en los que tu mascota puede estar presentando alguna señal de alerta es algo trascendental, e igualmente, tener quien te ayude a prevenir situaciones de riesgo para ellos.
+                            Está claro que cuando elegimos a una veterinaria para tratar a nuestros animalitos tenemos que saber que, además de atenderlos y solventar sus problemas de salud, nosotros damos mas que eso. </P>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                ¿Donde nos ubicamos?
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Ubicacion</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                        <div class="modal-body ">
+                                            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.6871479079027!2d-58.432567885194906!3d-34.61207176544629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca429815227f%3A0x5d302e497c2cda87!2sR%C3%ADo%20de%20Janeiro%20300%2C%20C1405%20CCB%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1622682939967!5m2!1ses!2sar" frameborder="0"></iframe>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </main>
+
+
+            <footer> 
+                <p>Todos los derechos reservados - 2021 - By Agustín Estrada</p>
+                
+            </footer>
+
+
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

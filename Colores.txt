@@ -1,0 +1,6 @@
+#C95460                  -Bordo
+
+#ECD2B7                 -Marron claro
+#F0D06A
+
+#463A2E                   -Marron oscuro
