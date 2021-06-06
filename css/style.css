@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .wrapper{
@@ -366,4 +367,8 @@ width: 100%;
     .box1{
         width: 90vw;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 549efd54cf81c1bc98720283128eff8a3b79b816
