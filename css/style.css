@@ -10,7 +10,6 @@
     max-width: 100vw;
     background-color:#C95460 ;
     overflow-x: hidden;
-    font-family: 'Open Sans', sans-serif;
 }
 
 /* -----HEADER----- */
@@ -92,7 +91,6 @@ footer{
     background-color:#F0D06A;
     padding: 15px 25px 15px 15px;
     border-radius: 30px 40px 40px 30px;
-    text-shadow:  2px 2px 0 black;
 }
 
 header a{
@@ -100,7 +98,6 @@ header a{
     color:#463A2E;
     font-size: 1.7rem;
     margin-right: 2vw;
-    text-shadow:  2px 2px 0 black;
     padding: 10px;
 }
 #wsp{
