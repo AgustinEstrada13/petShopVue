@@ -35,6 +35,13 @@ const app = Vue.createApp({
         alert(){
             return alert("Los datos se enviaron correctamente, en breve nos estaremos contactando")
         },
+        prueba(){
+            setTimeout(function(){
+                localStorage.clear()
+                location.reload()
+                }, 3000);
+                swal("Good job!", "Thanks for the buy", "success");
+        },
 
         pushCarrito(articulo){
 
